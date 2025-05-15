@@ -1,0 +1,123 @@
+/*General Reset*/
+ {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Noto serif',serif;
+background-color: #fff8f0;
+}
+
+header{
+    background-color: #d95d39;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+main{
+    padding: 30px 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+input[type="text"], textarea 
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button{
+    background-color: #d95d39;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+button:hover{
+    background-color: #c94c2e;
+}
+footer{
+    background-color: #d95d39;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+/*proverb Grid*/
+.proverb-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minimax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.proverb-card{
+    background-color: #fff0e5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px fpx rgba(0,0,0,1);
+    transition: transform 0.3s ease;
+}
+.hover-card:hover{
+    transform: scale(1.05);
+    background-color: #fffe5d;
+
+}
+.proverb-script{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    font-family: Arial, sans-serif;
+}
+/*detail page*/
+.proverb-detail{
+    background-color: #fff0e5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px rgba(0,0,0,1);
+}
+.proverb-detail p{
+    margin-bottom: 15px;
+}
+.back-button{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #d95d39;
+    font-weight: bold;
+}
+/*responsive*/
+@media(max-width:600px){
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
